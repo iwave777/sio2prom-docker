@@ -34,3 +34,4 @@ EXPOSE      9186/TCP
 WORKDIR     /sio2prom/
 VOLUME      ["/sio2prom/cfg","/sio2prom/logs"]
 CMD         ["/sio2prom/sio2prom"]
+COPY        ./sio2prom.json /sio2prom/cfg/
